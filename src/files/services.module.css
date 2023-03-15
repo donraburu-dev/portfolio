@@ -1,0 +1,27 @@
+.body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15%;
+}
+.body .h2{
+    position: relative;
+    padding: 40px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.box{
+    position: relative;
+    border: 2px solid black;
+    width: 30%;
+    height: 25vh;
+}
+.box .h3{
+    text-align: center;
+}
