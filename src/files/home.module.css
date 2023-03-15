@@ -1,0 +1,100 @@
+.banner{
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    width: 100%;
+}
+.text{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
+.text .h3{
+    position: relative;
+    top: 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+.text .h1{
+    position: relative;
+    
+    justify-content: center;
+    font-size: 5em;
+    line-height: 1.6;
+    font-weight: bold;
+    overflow: hidden;
+}
+.text .p{
+    font-size: 1.4em;
+    color: #000;
+    line-height: 1.6;
+}
+.imgBox{
+    position: relative;
+    height: 60vh;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+.img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 55%;
+}
+.tags{
+    position: relative;
+    width: 50%;
+}
+.a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5%;
+    width: 30%;
+    margin-top: 10%;
+    font-weight: bold;
+}
+.a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.a2{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5%;
+    margin-left: 5%;
+    width: 30%;
+    margin-top: 10%;
+    font-weight: bold;
+}
+.a2:hover{
+    background-color: #fff;
+    color: #000;
+}
+.animation{
+    width: 200px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    overflow: hidden;
+}
