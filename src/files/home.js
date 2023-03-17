@@ -20,7 +20,7 @@ const Home = () => {
               loop
             />
           </div>
-          <p className={styles.p}>webdeveloper, webdesigner, UI/UX designer</p>
+          <p className={styles.p}>Front-End React Developer</p>
           <div className={styles.tags}>
           <a className={styles.a} href='/'>LETS CONNECT</a>
           <a className={styles.a2} href='/'>SKILLS</a>
