@@ -21,10 +21,11 @@ const Home = () => {
             />
           </div>
           <p className={styles.p}>Front-End React Developer</p>
-          <div className={styles.tags}>
-          <a className={styles.a} href='/'>LETS CONNECT</a>
-          <a className={styles.a2} href='/'>SKILLS</a>
-          </div>
+        
+                <button className={styles.btn} >
+                <a className={styles.letsConnect} href='/'>SKILLS</a>
+                </button>
+        
         </div>
         <div className={styles.imgBox}>
           <img className={styles.img} src={myImage} alt="bannerImage" />

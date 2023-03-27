@@ -57,9 +57,11 @@ const Contact = () => {
                     <div  >
                         <textarea className={styles.textarea} placeholder='Leave a message' rows={8} ></textarea>
                     </div>
-                    <div>
-                    <button className={styles.btn} >SEND</button>
+                    
+                    <div className={styles.button} >
+                    <button className={styles.btn} > SEND  </button>
                     </div>
+                    
                 </form>
             </div>
           </div>

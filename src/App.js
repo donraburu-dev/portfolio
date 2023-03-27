@@ -1,35 +1,49 @@
 import './App.css';
+import { BrowserRouter as Router ,Route, Switch } from 'react-router-dom'
 import Nav from './files/nav';
 import Home from './files/home';
-import About from './files/about';
-import Services from './files/services';
-import Contact from './files/contact';
-import Footer from './files/footer';
-import { BrowserRouter as Router, Switch, Route ,Routes } from 'react-router-dom';
+import About from './files/about'
+import Services from './files/services'
+import Contact from './files/contact'
+import Footer  from  './files/footer'
 
 
-
-function App() {
-    
+function App() { 
   
   return (
     
-    <div className="App">
-     <Nav/>
-       <Router>
-        <Switch>
-        <Routes>
-          <Route  path="/" component={<Home/>} />
-          <Route path="/about" component={ <About/> } />
-          <Route path="/services" component={ <Services/> } />
-          <Route path="/contact" component={ <Contact/> } />
-          <Route path="/footer" component={ <Footer/> } />
-         </Routes>
-        </Switch>
-        </Router>
-       
-      
-    </div>
+     <Router>
+
+        <div className="App">
+        <Nav/>
+           
+
+          <Switch>
+            <Route exact path='/' >
+              <Home/>  
+            </Route>
+
+            <Route path='/about' >
+              <About/> 
+            </Route>
+
+            <Route path='/services' >
+              <Services/>  
+            </Route>
+
+            <Route path='/contact' >
+              <Contact/>  
+            </Route>
+
+            <Route path='/footer' >
+              <Footer/>  
+            </Route>
+
+          </Switch>
+         </div>
+
+     </Router>
+
   );
 }
 

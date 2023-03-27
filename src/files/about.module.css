@@ -1,20 +1,36 @@
+
 .body{
-    position: relative;
-    display: flex; 
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 100%;
-    padding: 150px;
-    justify-content: space-around;
- }
- .body .h2{
-    position: relative;
-    padding: 60px;
-    font-size: 2em;
- }
- .body .p{
-    position: relative;
-    line-height: 1.6;
-    font-size: 1.4em;
- }
- 
+   position: relative;
+   height: 60vh;
+   width: 100%;
+   padding-top: 20%;
+   display: flex;
+}
+.h2{
+   position: relative;
+   margin-left: 20%;
+   margin-top: 5%;
+}
+.p{
+   position: relative;
+   margin-left: 10%;
+   line-height: 1.5;
+   font-size: 1.2em;
+}
+@media ( max-width:767px ){
+   .body{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+   .h2{
+      font-size: 20px;
+      display: flex;
+      padding-left: 20%;
+      margin-bottom: 3%;
+   }
+   .p{
+      font-size: 17px;
+   }
+}

@@ -15,6 +15,7 @@
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 20px;
+    height: 10vh;
 }
 .ul{
     position: relative;
@@ -71,13 +72,86 @@
     border-radius: 5px;
 }
 .letsConnect{
-    display: inline-block;
-    margin-right: 5%;
-    border: 2px solid #333;
-    background-color: #fff;
     color: #000;
-    padding: 20px;
     text-decoration: none;
-    font-weight: bold;
     cursor: pointer;
+}
+.hamburger{
+    position: relative;
+    display: none;
+    margin-right: 10%;
+}
+
+
+@media ( max-width: 767px ) {
+    .navbar{
+        display: flex;
+        width: 100%;
+        
+    }
+    .ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    .links{
+        display: block;
+        padding: 30px;
+        background-color: #fff;
+        border-bottom: 0.5px solid black;
+        width: 100%;
+    }
+    .a{
+        width: 100%;
+        align-items: center;
+    }
+    .a:hover{
+        background-color: grey;
+        color: white;
+    }
+    .btn{
+        display: none;
+    }
+    .hamburger{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin: 4%;
+    }
+    .hamburger span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #000;
+        border-radius: 3px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .githubLink{
+        margin-left: 50%;
+    }
+    .logo{
+        margin-top: 5%;
+    }
+    .linkContact{
+        padding-top: 20px;
+        height: 60vh;
+        background-color: white;
+    }
+    .imgBox{
+        position: relative;
+        padding-right: 30%;
+    }
+    .animation{
+        font-size: 1px;
+    }
 }

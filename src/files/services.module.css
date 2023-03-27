@@ -2,7 +2,8 @@
     position: relative;
     text-align: center;
     display: block;
-    height: 10vh;
+    margin-top: 10%;
+    margin-bottom: 10px;
 }
 .wrapper{
     display: flex;
@@ -23,13 +24,21 @@
     display: block;
     flex-direction: column;
     margin: 20px;
-    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);  
 }
+.card:hover {
+    opacity: 0.85;
+    background-color: rgba(128,128,128,0.8); 
+    font-weight: bold;
+  }
 .h3{
     position: relative;
     text-align: center;
     font-size: 1.2em;
     margin-top: 7%;
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
 }
 .text{
     position: relative;
@@ -54,4 +63,31 @@
 .stack h4{
     display: flex;
     align-items: center;
+}
+@media ( max-width:767px ){
+    .h1{
+        position: relative;
+        padding-top: 5%;
+        font-size: 20px;
+    }
+    .card{
+        width: 60%;
+        padding-bottom: 0;
+    }
+    .card:hover{
+        opacity: 0.85;
+        background-color: rgba(128,128,128,0.8); 
+        font-weight: bold;
+    }
+    .icon{
+        height: 40px;
+        width: 50px;
+    }
+    .stack {
+        padding-bottom: 60px;
+
+    }
+    .wrapper{
+        height: 50%;
+    }
 }
