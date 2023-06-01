@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "raburu-6acee",
+    "staging": "raburu-6acee"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -8,6 +8,7 @@
     z-index: 1000;
     background-color: #fff;
 }
+
 .logo{
     position: relative;
     margin-left: 5%;
@@ -62,7 +63,11 @@
     transform: scale(1.1); /* scale the element up by 10% on hover */
   }
 
-.btn{
+
+.letsConnect{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
     position: relative;
     margin-right: 5%;
     margin-top: 10px;
@@ -70,26 +75,35 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 15px ;
 }
-.letsConnect{
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.letsConnect:hover{
+    color: #fff;
+    background-color: #000;
 }
 .hamburger{
     position: relative;
     display: none;
     margin-right: 10%;
 }
+.ulHamburger{
+    display: none;
+}
 
-
-@media ( max-width: 767px ) {
+@media (max-width: 414px) {
     .navbar{
         display: flex;
         width: 100%;
-        
+    }
+    .letsConnect{
+        display: none;
     }
     .ul{
+        display: none;
+    }
+   
+    .ulHamburger{
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -97,7 +111,14 @@
         width: 100%;
         margin-top: 10%;
         margin-left: 0%;
+        height: 100vh;
+        background-color: #fff;
     }
+    .ulHamburger .links{
+        position: relative;
+        text-align: start;
+    }
+   
     .links{
         display: block;
         padding: 30px;
@@ -121,12 +142,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 70px;
+        width: 50px;
         height: 30px;
         background: transparent;
         border: none;
         cursor: pointer;
         margin: 4%;
+        margin-right: 5%;
     }
     .hamburger span{
         display: block;
@@ -142,16 +164,23 @@
     .logo{
         margin-top: 5%;
     }
-    .linkContact{
-        padding-top: 20px;
-        height: 60vh;
-        background-color: white;
-    }
+
+
+
+
+    
+
+
+
+
     .imgBox{
         position: relative;
         padding-right: 30%;
     }
     .animation{
         font-size: 1px;
+    }
+    .githubLink{
+        display: none;
     }
 }

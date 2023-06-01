@@ -21,11 +21,15 @@
 }
 .text .h1{
     position: relative;
-    
     justify-content: center;
     font-size: 5em;
     line-height: 1.6;
     font-weight: bold;
+    overflow: hidden;
+}
+.animation{
+    width: 200px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
     overflow: hidden;
 }
 .text .p{
@@ -34,26 +38,30 @@
     line-height: 1.6;
 }
 
-
-
 .btn{
     position: relative;
     margin-right: 5%;
     margin-top: 10px;
-    height: 1%;
+    text-decoration: none;
     padding: 15px;
+    background-color: #000;
+    color:#fff;
+    width: 15%;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.btn:hover{
     background-color: #fff;
-    border-radius: 5px;
-    width: 30%;
+    color: #000;
+    cursor: pointer;
 }
 .letsConnect{
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
 .imgBox{
     position: relative;
     height: 60vh;
@@ -120,19 +128,16 @@
     height: 50px; /* Set a fixed height */
     overflow: hidden;
 }
-@media ( max-width:767px ) {
+.responsiveText{
+    display: none;
+}
+.text .p1{
+    display: none;
+}
+
+@media ( max-width: 414px ) {
     .banner{
         padding-right: 10%;
-    }
-    .animation{
-        font-size: 40px;
-    }
-    .text .h3{
-        margin: 0;
-        font-size: 20px;
-    }
-    .text .h1{
-        margin: 0;
     }
     .skills{
         background-color: #000;
@@ -144,4 +149,56 @@
         background-color: #fff;
         cursor: pointer;
     }
+    .btn{
+        font-size: 9px;
+        position: relative;
+        width: 30%;
+        border-radius: 15px;
+        height: 8%;
+        margin-left: 5%;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .imgBox{
+        position: relative;
+        height: 30vh;
+        animation: bounce 2s infinite;
+    }
+    .text{
+        position: relative;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .text .h3{
+    
+        display: none;
+    }
+    .text .h1{
+      display: none;
+    }
+    
+    .text .p{
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .responsiveText{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        
+    }
+    .text .p1{
+        display: inline-block;
+        font-size: 13px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+  
+   
 }
