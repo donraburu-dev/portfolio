@@ -6,12 +6,7 @@ import { getFirestore, addDoc, collection } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAbmsqyt_yWd5-Gxj4g6myHLWNL3Lupfho",
-  authDomain: "raburu-6acee.firebaseapp.com",
-  projectId: "raburu-6acee",
-  storageBucket: "raburu-6acee.appspot.com",
-  messagingSenderId: "199246756310",
-  appId: "1:199246756310:web:c39898e80c15da46240c77"
+  
 };
   
 // Initialize Firebase
