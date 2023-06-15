@@ -16,8 +16,8 @@ exports.sendEmailOnDocumentCreate = functions.firestore
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: 'donraburu675@gmail.com',
-        pass: ''
+        user: ' ',
+        pass: ' '
       }
     });
 
